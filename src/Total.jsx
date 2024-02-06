@@ -1,8 +1,10 @@
-export const Total = ({ exercises1, exercises2, exercises3 }) => {
+export const Total = ({ CourseData }) => {
+  const total =
+    CourseData[0].exercises + CourseData[1].exercises + CourseData[2].exercises;
 
-    const total = exercises1 + exercises2 + exercises3;
-
-    return (
-        <p>Number of exercises {total}</p>
-    );
+  return (
+    <>
+      <p>Number of exercises {total}</p>
+    </>
+  );
 };
